@@ -1,0 +1,12 @@
+{
+  "name": "HttpResolve",
+  "version": "1.0.0",
+  "description": "just my computer network homework",
+  "main": "./src/index.js",
+  "repository": "git@github.com:hwfhc/HttpResolve",
+  "author": "hwfhc <gyczt879574764@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "brudie": "^1.0.1"
+  }
+}
