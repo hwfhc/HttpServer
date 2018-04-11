@@ -26,7 +26,7 @@ const version = new TokGen({
     }
 });
 const path = new TokGen({
-    MATCH: /^[a-zA-Z\/]+/,
+    MATCH: /^[a-zA-Z\/\.]+/,
     type: 'path',
     eval: function () {
         return this.value;
@@ -88,7 +88,7 @@ const mode = new ModeGen({
 });
 // 字符串值匹配需要限制下使用，比如必须以调用形式！！！11
 // 报错信息转义字符需要处理！！@！！！
-var top = rule('top').add(method('GET')).add(punc(' ')).add(path).add(punc(' ')).add(version).add(punc('\r')).add(punc('\n')).setEval(
+var request = rule('request').add(method('GET')).add(punc(' ')).add(path).add(punc(' ')).add(version).add(punc('\r')).add(punc('\n')).setEval(
     function () {
         var arr = this.getChildren();
 
@@ -111,7 +111,7 @@ var header = rule('header').add(head).add(punc('\:')).add(punc(' ')).add(str).ad
     }
 );
 
-var http = rule('http').add(top).all(header).setEval(
+var http = rule('http').add(request).repeat(header).add(punc('\r')).add(punc('\n')).setEval(
     function () {
         var req = {};
 
