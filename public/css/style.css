@@ -1,0 +1,740 @@
+/** Website template by # **/
+body {
+	margin:0;
+	padding:0;
+	background:url("../images/bg-main-top-body.jpg") no-repeat scroll center top;
+	width:100%;
+	height:100%;
+	background-color:#ffffff;
+}
+a {
+	outline:0;
+}
+img {
+	border:0;
+}
+img:hover {
+	opacity:0.9;
+	filter:alpha(opacity=90); /* Needed for IE8 and old versions */
+}
+@font-face {
+	font-family:'didact_gothicregular';
+	src:url('../fonts/didactgothic-webfont.eot');
+	src:url('../fonts/didactgothic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/didactgothic-webfont.woff') format('woff'),
+	url('../fonts/didactgothic-webfont.ttf') format('truetype'),
+	url('../fonts/didactgothic-webfont.svg#didact_gothicregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'anticregular';
+	src:url('../fonts/antic-regular-webfont.eot');
+	src:url('../fonts/antic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/antic-regular-webfont.woff') format('woff'),
+	url('../fonts/antic-regular-webfont.ttf') format('truetype'),
+	url('../fonts/antic-regular-webfont.svg#anticregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'abelregular';
+	src:url('../fonts/abel-regular-webfont.eot');
+	src:url('../fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/abel-regular-webfont.woff') format('woff'),
+	url('../fonts/abel-regular-webfont.ttf') format('truetype'),
+	url('../fonts/abel-regular-webfont.svg#abelregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+div#page {
+	width:100%;
+}
+div#page div#header {
+	background:url("../images/bg-header.png") no-repeat scroll center bottom transparent;
+	width:100%;
+	height:140px;
+	margin:0 0 90px 0;
+}
+div#page div#header div {
+	width:960px;
+	height:140px;
+	margin:0 auto;
+	position:relative;
+}
+div#page div#header div a.logo {
+	position:absolute;
+	left:430px;
+	top:25px;
+	display:block;
+	z-index:999;
+}
+div#page div#header div ul.navigation {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:65px;
+}
+div#page div#header div ul.navigation li {
+	float:left;
+}
+div#page div#header div ul.navigation li.middle {
+	margin:0 170px 0 0;
+}
+div#page div#header div ul.navigation li a {
+	font-family:'didact_gothicregular';
+	font-size:16px;
+	color:#c7bebe;
+	text-decoration:none;
+	padding:0 22px;
+}
+div#page div#header div ul.navigation li a:hover {
+	font-family:'didact_gothicregular';
+	font-size:16px;
+	color:#f41465;
+}
+div#page div#header div ul.navigation li a.active {
+	font-family:'didact_gothicregular';
+	font-size:16px;
+	color:#f41465;
+}
+div#page div#body {
+	width:960px;
+	min-height:893px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0 0 40px 0;
+}
+div#page div#body div.featured {
+	width:960px;
+	height:auto;
+	overflow:hidden;
+}
+div#page div#body div.featured ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div#page div#body div.featured ul li {
+	float:left;
+	width:220px;
+	margin:0 10px;
+}
+div#page div#body > div.content {
+	width:470px;
+	float:left;
+	margin:0 20px 0 0;
+}
+div#page div#body > div.content ul.about {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div#page div#body > div.content ul.about li {
+	margin:0 0 80px 0;
+	width:430px;
+	padding:0 20px 0 10px;
+}
+div#page div#body > div.content ul.about li h2 {
+	font-family:'anticregular';
+	font-size:20px;
+	color:#756666;
+	font-weight:normal;
+	margin:0;
+}
+div#page div#body > div.content ul.about li h2 a {
+	font-family:'anticregular';
+	font-size:20px;
+	color:#756666;
+	font-weight:normal;
+	text-decoration:none;
+}
+div#page div#body > div.content ul.about li h2 a:hover {
+	font-family:'anticregular';
+	font-size:20px;
+	color:#f41465;
+	font-weight:normal;
+	text-decoration:none;
+}
+div#page div#body > div.content ul.about li span {
+	font-family:Arial;
+	font-size:12px;
+	color:#c7bebe;
+	font-weight:normal;
+	margin:0;
+	line-height:24px;
+	text-align:justify;
+	display:block;
+}
+div#page div#body > div.content ul.about li p {
+	font-family:Arial;
+	font-size:12px;
+	color:#c7bebe;
+	font-weight:normal;
+	margin:0 0 30px 0;
+	line-height:24px;
+	text-align:justify;
+	letter-spacing:0.5px;
+}
+div#page div#body > div.content ul.about li p a {
+	font-family:Arial;
+	font-size:12px;
+	color:#c7bebe;
+	font-weight:normal;
+}
+div#page div#body > div.content ul.about li p a:hover {
+	font-family:Arial;
+	font-size:12px;
+	color:#f41465;
+	font-weight:normal;
+}
+div#page div#body > div.aside {
+	width:420px;
+	float:left;
+	text-align:center;
+	padding:0 20px;
+}
+div#page div#body div#content {
+	width:960px;
+	height:auto;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+}
+div#page div#body div#content ul.shops {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	width:960px;
+	overflow:hidden;
+}
+div#page div#body div#content ul.shops li {
+	float:left;
+	width:420px;
+	margin:0 30px 30px 30px;
+	padding:0;
+}
+div#page div#body div#content ul.shops li h2 {
+	font-family:'anticregular';
+	font-size:20px;
+	color:#756666;
+	font-weight:normal;
+	text-decoration:none;
+	margin:0;
+	line-height:24px;
+}
+div#page div#body div#content ul.shops li h2 a {
+	font-family:'anticregular';
+	font-size:20px;
+	color:#756666;
+	font-weight:normal;
+	text-decoration:none;
+}
+div#page div#body div#content ul.shops li h2 a:hover {
+	font-family:'anticregular';
+	font-size:20px;
+	color:#f41465;
+	font-weight:normal;
+	text-decoration:none;
+}
+div#page div#body div#content ul.shops li span {
+	font-family:Arial;
+	font-size:12px;
+	color:#c7bebe;
+	font-weight:normal;
+	margin:0;
+	line-height:24px;
+	text-align:justify;
+}
+div#page div#body div#content ul.shops li ul li a {
+	font-family:Arial;
+	font-size:12px;
+	color:#c7bebe;
+	font-weight:normal;
+	line-height:24px;
+	text-align:justify;
+	text-decoration:none;
+}
+div#page div#body div#content ul.shops li ul li a:hover {
+	font-family:Arial;
+	font-size:12px;
+	color:#f41465;
+	font-weight:normal;
+	text-decoration:none;
+}
+div#page div#body div#content ul.shops li ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	width:420px;
+}
+div#page div#body div#content ul.shops li ul li {
+	float:left;
+	width:140px;
+	margin:0;
+	padding:0;
+}
+div#page div#body div#content ul.shops li ul li.first {
+	float:left;
+	width:173px;
+	margin:0;
+	padding:0;
+}
+div#page div#body div#content ul.shops li ul li.last {
+	float:left;
+	width:90px;
+	margin:0;
+	padding:0;
+}
+div#page div#body div#content ul.sale {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+div#page div#body div#content ul.sale li {
+	float:left;
+	margin:0 10px 60px 10px;
+}
+div#page div#body div#content ul.sale li img {
+	padding:1px;
+	background:url("../images/bg-product-border.png") no-repeat scroll center center transparent;
+}
+div#page div#body div#content ul.sale li img:hover {
+	opacity:0.9;
+	filter:alpha(opacity=90); /* Needed for IE8 and old versions */
+}
+div#page div#body div#content ul.paging {
+	height:25px;
+	list-style-type:none;
+	margin:30px auto 0;
+	overflow:hidden;
+	padding:0;
+	width:350px;
+}
+div#page div#body div#content ul.paging li.first {
+	float:left;
+	height:25px;
+	padding:0 10px 0 5px;
+	width:auto;
+}
+div#page div#body div#content ul.paging li.first a {
+	color:#c7bebe;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+div#page div#body div#content ul.paging li.first a:hover {
+	color:#f41465;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+div#page div#body div#content ul.paging li {
+	float:left;
+	height:25px;
+	padding:0 7px;
+	width:auto;
+}
+div#page div#body div#content ul.paging li a {
+	color:#756666;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #FFFFFF;
+}
+div#page div#body div#content ul.paging li a:hover {
+	color:#f41465;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+div#page div#body div#content ul.paging li ul {
+	height:25px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:auto;
+}
+div#page div#body div#content ul.paging li ul li {
+	float:left;
+	width:auto;
+}
+div#page div#body div#content ul.paging li a.active {
+	color:#C7979D;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+div#page div#body div#content ul.paging li.last {
+	float:left;
+	height:25px;
+	padding:0 5px 0 10px;
+	width:auto;
+}
+div#page div#body div#content ul.paging li.last a {
+	color:#756666;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+div#page div#body div#content ul.paging li.last a:hover {
+	color:#f41465;
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+div#page div#body div#content div.content {
+	width:590px;
+	margin:0 110px 0 10px;
+	float:left;
+}
+div#page div#body div#content div.content ul.paging {
+	width:400px;
+}
+div#page div#body div#content div.content ul.paging li:first-child {
+	margin:0 0 0 55px;
+}
+div#page div#body div#content div.content ul.paging li ul li:first-child {
+	margin:0;
+}
+div#page div#body div#content div.content ul.blog {
+	list-style-type:none;
+	margin:0 0 90px 0;
+	padding:0;
+	overflow:hidden;
+}
+div#page div#body div#content div.content ul.blog {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div#page div#body div#content div.content ul.blog li {
+	padding:0 0 0 50px;
+	background:url("../images/bg-circle-header-blog.png") no-repeat scroll left top transparent;
+}
+div#page div#body div#content div.content ul.blog li h1 {
+	background:url("../images/bg-header-blog.png") repeat-x scroll bottom left transparent;
+	margin:0;
+	height:40px;
+	line-height:40px;
+	padding:0;
+	position:relative;
+}
+div#page div#body div#content div.content ul.blog li h1 a {
+	font-family:'anticregular';
+	color:#756666;
+	font-size:20px;
+	text-decoration:none;
+}
+div#page div#body div#content div.content ul.blog li h1 a:hover {
+	font-family:'anticregular';
+	color:#f41465;
+	font-size:20px;
+	text-decoration:none;
+}
+div#page div#body div#content div.content ul.blog li h1 span {
+	background:url("../images/icon-comment.png") no-repeat scroll center left transparent;
+	margin:0;
+	padding:0;
+	height:40px;
+	width:80px;
+	line-height:40px;
+	position:absolute;
+	right:0;
+	font-family:Arial;
+	font-size:10px;
+	color:#c7bebe;
+	text-align:right;
+	display:inline;
+}
+div#page div#body div#content div.content ul.blog li h1 span a {
+	font-family:Arial;
+	font-size:10px;
+	color:#c7bebe;
+	text-align:right;
+	text-decoration:none;
+}
+div#page div#body div#content div.content ul.blog li h1 span a:hover {
+	font-family:Arial;
+	font-size:10px;
+	color:#f41465;
+	text-align:right;
+	text-decoration:none;
+}
+div#page div#body div#content div.content ul.blog li span {
+	font-family:Arial;
+	color:#c7bebe;
+	font-size:10px;
+	line-height:24px;
+	margin:0 0 20px 0;
+	display:block;
+}
+div#page div#body div#content div.content ul.blog li img {
+	background:url("../images/bg-border-blog.png") repeat-x scroll bottom left transparent;
+	margin:0;
+	padding:10px;
+}
+div#page div#body div#content div.content ul.blog li p {
+	color:#c7bebe;
+	font-family:Arial;
+	font-size:12px;
+	line-height:24px;
+	text-align:justify;
+	margin:12px 0 35px 0;
+	letter-spacing: 0.5px;
+}
+div#page div#body div#content div.content ul.blog li p a {
+	color:#c7bebe;
+	font-family:Arial;
+	font-size:12px;
+}
+div#page div#body div#content div.content ul.blog li p a:hover {
+	color:#f41465;
+	font-family:Arial;
+	font-size:12px;
+	text-decoration:underline;
+}
+div#page div#body div#content div#sidebar {
+	width:210px;
+	margin:0 10px;
+	padding:0 10px;
+	float:left;
+}
+div#page div#body div#content div#sidebar h2 {
+	color:#756666;
+	font-family:'anticregular';
+	font-size:22px;
+	font-weight:normal;
+	margin:0 0 30px 0;
+	padding:0 0 0 20px;
+	text-decoration:none;
+	text-shadow:0 0 10px #FFFFFF;
+}
+div#page div#body div#content div#sidebar ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div#page div#body div#content div#sidebar ul li {
+	margin:0;
+	padding:0;
+	cursor:pointer;
+}
+div#page div#body div#content div#sidebar ul li h4 {
+	color:#f41465;
+	font-family:'abelregular';
+	font-size:16px;
+	font-weight:normal;
+	margin:25px 0 10px 0;
+	padding:0;
+	text-shadow:0 0 10px #FFFFFF;
+}
+div#page div#body div#content div#sidebar ul li ul {
+	margin:0;
+	padding:0 0 0 40px;
+	display:none;
+}
+div#page div#body div#content div#sidebar ul li:hover ul {
+	display:block;
+}
+div#page div#body div#content div#sidebar ul li ul li a {
+	color:#c7bebe;
+	font-family:Arial;
+	font-size:12px;
+	text-decoration:none;
+	line-height:24px;
+}
+div#page div#body div#content div#sidebar ul li ul li a:hover {
+	color:#f41465;
+	font-family:Arial;
+	font-size:12px;
+	text-decoration:none;
+}
+div#page div#body div#content div.section {
+	margin:0 auto;
+	padding:0;
+	width:780px;
+}
+div#page div#body div#content div.section h2 {
+	color:#756666;
+	font-family:'anticregular';
+	font-size:22px;
+	font-weight:normal;
+	text-decoration:none;
+	margin:0 0 10px 0;
+	line-height:24px;
+}
+div#page div#body div#content div.section h2 a {
+	color:#f41465;
+	font-family:'anticregular';
+	font-size:22px;
+	font-weight:normal;
+	text-decoration:none;
+}
+div#page div#body div#content div.section h2 a:hover {
+	color:#f41465;
+	font-family:'anticregular';
+	font-size:22px;
+	font-weight:normal;
+	text-decoration:underline;
+}
+div#page div#body div#content div.section p {
+	color:#B5B3AB;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+	letter-spacing:0.5px;
+	margin:0 0 30px 0;
+}
+div#page div#body div#content div.section p a {
+	color:#B5B3AB;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+}
+div#page div#body div#content div.section p a:hover {
+	color:#f41465;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+	text-decoration:none;
+}
+div#page div#body div#content div.section ul {
+	list-style-type:none;
+	margin:50px 0 0 0;
+	padding:0;
+}
+div#page div#body div#content div.section ul li label {
+	color:#B5B3AB;
+	display:block;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+	text-decoration:none;
+	letter-spacing:0.5px;
+}
+div#page div#body div#content div.section ul li {
+	margin:0 0 80px;
+}
+div#page div#body div#content div.section ul li label span {
+	color:#B5B3AB;
+	display:block;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+	margin-bottom:30px;
+	margin-left:30px;
+	text-decoration:none;
+}
+div#page div#body div#content div.section ul li label a {
+	color:#c7bebe;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+}
+div#page div#body div#content div.section ul li label a:hover {
+	color:#f41465;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+}
+div#page div#body div#content div.section ul li label span.connect {
+	color:#B5B3AB;
+	display:block;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+	text-decoration:none;
+	margin:0 0 0 60px;
+}
+div#page div#body div#content div.section ul li h3 {
+	color:#f41465;
+	font-family:'Arial';
+	font-size:14px;
+	font-weight:normal;
+	line-height:24px;
+	margin:0;
+	text-decoration:none;
+}
+div#page div#body div#content div.section ul li span {
+	color:#B5B3AB;
+	display:block;
+	font-family:'Arial';
+	font-size:12px;
+	line-height:24px;
+	margin-left:30px;
+	text-decoration:none;
+}
+div#page div#footer {
+	width:100%;
+	height:auto;
+	background:url("../images/bg-footer.png") no-repeat scroll center top transparent;
+}
+div#page div#footer div {
+	width:960px;
+	height:auto;
+	margin:0 auto;
+	padding:50px 0 50px 0;
+}
+div#page div#footer div ul.connect {
+	list-style-type:none;
+	margin:0 auto;
+	padding:0;
+	width:250px;
+	display:block;
+	overflow:hidden;
+}
+div#page div#footer div ul.connect li {
+	margin:0 15px;
+	float:left;
+}
+div#page div#footer div ul.connect li a {
+	text-decoration:none;
+	display:block;
+}
+div#page div#footer div ul.connect li a.email {
+	text-decoration:none;
+	background:url("../images/icon.png") no-repeat scroll 0 -62px transparent;
+	width:32px;
+	height:30px;
+}
+div#page div#footer div ul.connect li a.googleplus {
+	text-decoration:none;
+	background:url("../images/icon.png") no-repeat scroll 0 -222px transparent;
+	width:32px;
+	height:30px;
+}
+div#page div#footer div ul.connect li a.facebook {
+	text-decoration:none;
+	background:url("../images/icon.png") no-repeat scroll 0 -142px transparent;
+	width:32px;
+	height:30px;
+}
+div#page div#footer div ul.connect li a.twitter {
+	text-decoration:none;
+	background:url("../images/icon.png") no-repeat scroll 0 -302px transparent;
+	width:32px;
+	height:30px;
+}
+div#page div#footer div span {
+	font-family:Arial;
+	color:#c7bebe;
+	font-size:12px;
+	display:block;
+	text-align:center;
+	margin:100px 0 0 0;
+}
+div#page div#footer div span a {
+	font-family:Arial;
+	color:#c7bebe;
+	font-size:12px;
+	text-decoration:none;
+}
+div#page div#footer div span a:hover {
+	font-family:Arial;
+	color:#f41465;
+	font-size:12px;
+	text-decoration:none;
+}
