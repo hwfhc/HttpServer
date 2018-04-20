@@ -26,7 +26,7 @@ const version = new TokGen({
     }
 });
 const path = new TokGen({
-    MATCH: /^[a-zA-Z\/\.]+/,
+    MATCH: /^[a-zA-Z\/\-\.]+/,
     type: 'path',
     eval: function () {
         return this.value;

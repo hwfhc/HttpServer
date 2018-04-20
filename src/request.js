@@ -1,20 +1,47 @@
 const exec = require('./spec')
 
-async function request(data){
-    var req = await exec(data);
+function request(data){
+    return new Promise((resolve,reject) => {
+        exec(data,function(err,req){
+            if(err) reject(err);
 
-    req.setHeader = setHeader;
-    req.getHeader = getHeader;
+            req.getPath = getPath;
+            req.getMethod = getMethod;
+            req.setHeader = setHeader;
+            req.getHeader = getHeader;
 
-    return req;
+            resolve(req);
+        });
+    });
 }
 
-function setHeader(){
-    console.log(156);
+function getMethod(){
+    if(!this) throw Error(`this is miss`);
+
+    return this.method;
 }
 
-function getHeader(){
-    console.log(156);
+function getPath(){
+    if(!this) throw Error(`this is miss`);
+
+    return this.path;
+}
+
+function setHeader(header,value){
+    if(!this) throw Error(`this is miss`);
+
+    this.headers.push({
+        key: header,
+        value: value
+    });
+}
+
+function getHeader(header){
+    if(!this) throw Error(`this is miss`);
+
+    for(var i=0;i<this.headers.length;i++)
+        if(this.headers[i].key === header)
+            return this.headers[i].value
 }
 
 module.exports = request;

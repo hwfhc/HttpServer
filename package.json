@@ -5,11 +5,11 @@
     "main": "./src/index.js",
     "repository": "git@github.com:hwfhc/HttpResolve",
     "author": "hwfhc <gyczt879574764@gmail.com>",
-    "scripts":{
-        "start":"node ./src/index.js"
+    "scripts": {
+        "start": "node ./src/index.js"
     },
     "license": "MIT",
     "dependencies": {
-        "brudie": "^1.0.1"
+        "brudie": "1.0.1"
     }
 }
