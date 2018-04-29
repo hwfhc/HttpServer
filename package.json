@@ -10,6 +10,6 @@
     },
     "license": "MIT",
     "dependencies": {
-        "brudie": "1.0.1"
+        "brudie": "^1.1.0"
     }
 }

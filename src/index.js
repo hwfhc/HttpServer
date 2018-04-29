@@ -8,7 +8,6 @@ const route = require('./route');
 const server = net.createServer(socket => {
     socket.on("data",async data => {
         try{
-            //var req = await exec(data.toString('ascii'));
             var req = await request(data.toString('ascii'));
         }catch(err){
             throw err;

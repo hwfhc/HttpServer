@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
-brudie@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/brudie/-/brudie-1.0.1.tgz#a202755d5ed8fe84889fd2adbf565451e6e7ea71"
+brudie@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/brudie/-/brudie-1.1.0.tgz#7bf04f7d8fd53f44d3fa3163a5452e110d71dc4e"
+  dependencies:
+    iserror "^0.0.2"
+
+iserror@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/iserror/-/iserror-0.0.2.tgz#bd53451fe2f668b9f2402c1966787aaa2c7c0bf5"

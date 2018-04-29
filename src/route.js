@@ -1,7 +1,7 @@
 const fs = require('fs');
 const response = require('./response');
 
-const dir = '/home/hwfhc/repo/HttpResolve';
+const dir = 'D:/HttpResolve';
 
 const handleRequest = module.exports = async function(req,socket){
     if(req.getPath() === '/'){

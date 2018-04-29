@@ -1,22 +1,25 @@
 const exec = require('./spec')
 
-function request(data){
-    return new Promise((resolve,reject) => {
-        exec(data,function(err,req){
-            if(err) reject(err);
-
-            req.getPath = getPath;
-            req.getMethod = getMethod;
-            req.setHeader = setHeader;
-            req.getHeader = getHeader;
-
-            resolve(req);
-        });
+function request(data) {
+    return new Promise((resolve, reject) => {
+        let req;
+        exec(data).then(
+            data => {
+                req = data;
+                req.getPath = getPath;
+                req.getMethod = getMethod;
+                req.setHeader = setHeader;
+                req.getHeader = getHeader;
+                resolve(req);
+            },
+            err =>
+                reject(err)
+        )
     });
 }
 
-function getMethod(){
-    if(!this) throw Error(`this is miss`);
+function getMethod() {
+    if (!this) throw Error(`this is miss`);
 
     return this.method;
 }

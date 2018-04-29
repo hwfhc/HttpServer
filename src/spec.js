@@ -60,34 +60,30 @@ const html = new TokGen({
     }
 });
 
-
-//有限状态机添加及自动检测迫在眉睫！！！！
-
-const mode = new ModeGen({
-    switch: function (token) {
-        if(this.isState("default")){
-            if (token === '\n')
-               this.switch("head");
-        }
-
-        if(this.isState("value")){
-            if (token === '\n')
-               this.switch("head");
-        }
-
-        if(this.isState("head")){
-            if (token === ' ')
-               this.switch("value");
-        }
+const mode = new ModeGen([
+    {
+        name: 'value',
+        tokens: [str,punc],
+        mutations: [
+            { token: '\n', target: 'head' }
+        ]
     },
-    rule: {
-        value: [str,punc],
-        head: [punc,head],
-        default: [method, version, path, punc]
+    {
+        name: 'head',
+        tokens: [punc,head],
+        mutations: [
+            { token: ' ', target: 'value' }
+        ]
+    },
+    {
+        name: 'default',
+        tokens: [method, version, path, punc],
+        mutations: [
+            { token: '\n', target: 'head' }
+        ]
     }
-});
-// 字符串值匹配需要限制下使用，比如必须以调用形式！！！11
-// 报错信息转义字符需要处理！！@！！！
+]);
+
 var request = rule('request').add(method('GET')).add(punc(' ')).add(path).add(punc(' ')).add(version).add(punc('\r')).add(punc('\n')).setEval(
     function () {
         var arr = this.getChildren();
